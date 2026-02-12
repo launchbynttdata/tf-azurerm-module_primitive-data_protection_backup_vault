@@ -1,5 +1,4 @@
 resource "azurerm_data_protection_backup_vault" "backup_vault" {
-  count = var.enabled ? 1 : 0
 
   name                = var.name
   resource_group_name = var.resource_group_name

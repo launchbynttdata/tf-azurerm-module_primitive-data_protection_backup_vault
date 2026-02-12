@@ -1,11 +1,11 @@
 output "vault_id" {
-  value = try(azurerm_data_protection_backup_vault.backup_vault[0].id, null)
+  value = azurerm_data_protection_backup_vault.backup_vault.id
 }
 
 output "vault_name" {
-  value = try(azurerm_data_protection_backup_vault.backup_vault[0].name, null)
+  value = azurerm_data_protection_backup_vault.backup_vault.name
 }
 
 output "identity" {
-  value = try(azurerm_data_protection_backup_vault.backup_vault[0].identity, null)
+  value = azurerm_data_protection_backup_vault.backup_vault.identity
 }

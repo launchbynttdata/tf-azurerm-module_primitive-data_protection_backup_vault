@@ -1,9 +1,3 @@
-variable "enabled" {
-  description = "Create the backup vault"
-  type        = bool
-  default     = true
-}
-
 variable "name" {
   description = "Backup vault name"
   type        = string

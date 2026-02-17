@@ -45,5 +45,10 @@ No resources.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_resource_group_name"></a> [resource\_group\_name](#output\_resource\_group\_name) | Name of the resource group |
+| <a name="output_backup_vault_name"></a> [backup\_vault\_name](#output\_backup\_vault\_name) | Name of the backup vault |
+| <a name="output_backup_vault_id"></a> [backup\_vault\_id](#output\_backup\_vault\_id) | ID of the backup vault |
+| <a name="output_backup_vault_identity"></a> [backup\_vault\_identity](#output\_backup\_vault\_identity) | Identity of the backup vault |
 <!-- END_TF_DOCS -->

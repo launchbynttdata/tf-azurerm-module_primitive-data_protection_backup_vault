@@ -47,5 +47,6 @@ module "backup_vault" {
   soft_delete                = var.soft_delete
   retention_duration_in_days = var.retention_duration_in_days
 
-  tags = var.tags
+  tags       = var.tags
+  depends_on = [module.resource_group]
 }

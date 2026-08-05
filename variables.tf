@@ -4,34 +4,41 @@ variable "name" {
 }
 
 variable "resource_group_name" {
-  type = string
+  description = "Name of the resource group where the backup vault is created."
+  type        = string
 }
 
 variable "location" {
-  type = string
+  description = "Azure region where the backup vault is created."
+  type        = string
 }
 
 variable "datastore_type" {
-  type    = string
-  default = "VaultStore"
+  description = "Type of datastore used by the backup vault."
+  type        = string
+  default     = "VaultStore"
 }
 
 variable "redundancy" {
-  type    = string
-  default = "LocallyRedundant"
+  description = "Storage redundancy used by the backup vault."
+  type        = string
+  default     = "LocallyRedundant"
 }
 
 variable "retention_duration_in_days" {
-  type    = number
-  default = 14
+  description = "Number of days that soft-deleted backup data is retained."
+  type        = number
+  default     = 14
 }
 
 variable "soft_delete" {
-  type    = string
-  default = "On"
+  description = "Soft-delete state for the backup vault."
+  type        = string
+  default     = "On"
 }
 
 variable "identity" {
+  description = "Managed identity configuration for the backup vault."
   type = object({
     type = string
   })
@@ -39,6 +46,7 @@ variable "identity" {
 }
 
 variable "tags" {
-  type    = map(string)
-  default = {}
+  description = "Tags applied to the backup vault."
+  type        = map(string)
+  default     = {}
 }

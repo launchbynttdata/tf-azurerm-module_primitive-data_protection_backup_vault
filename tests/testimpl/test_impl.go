@@ -68,3 +68,7 @@ func TestBackupVault(t *testing.T, ctx types.TestContext) {
 		)
 	})
 }
+
+func TestComposableReadonlyBackupVault(t *testing.T, ctx types.TestContext) {
+	TestBackupVault(t, ctx)
+}
